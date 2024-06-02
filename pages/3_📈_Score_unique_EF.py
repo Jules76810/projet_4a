@@ -52,8 +52,11 @@ sns.heatmap(corr, mask=mask, cmap=cmap, annot=True, vmin=-1, vmax=1)
 st.pyplot(f)
 
 corr = df.corr()['Score unique EF']
-st.write("Corrélation décroissante avec le Score unique EF:")
-st.write(corr)
+st.write("Variables les plus corrélées décroissantes avec le Score unique EF:")
+top_variables = pd.DataFrame(df.corr()['Score unique EF'].sort_values(ascending=False))
+top_variables = top_variables.reset_index()
+top_variables = top_variables.iloc[1:, :]
+st.dataframe(top_variables)
 
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

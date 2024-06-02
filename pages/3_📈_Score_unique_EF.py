@@ -23,7 +23,7 @@ st.write("Voici un aperçu des données utilisées pour créer l'histogramme :")
 st.dataframe(data)
 fig = px.histogram(data, x="Score Unique EF", title="Histogramme de Score Unique EF")
 st.plotly_chart(fig)
-st.write("Cet histogramme montre la distribution des valeurs de la colonne "Score Unique EF".Les barres représentent la fréquence des différentes valeurs dans l'ensemble des données.")
+st.write("Cet histogramme montre la distribution des valeurs de la colonne Score Unique EF.Les barres représentent la fréquence des différentes valeurs dans l'ensemble des données.")
 
 st.header('Qualité de la donnée:')
 dqr_value = st.select_slider('Qualité de la donné',

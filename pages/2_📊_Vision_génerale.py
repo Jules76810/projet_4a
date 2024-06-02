@@ -38,9 +38,14 @@ st.write("Étude du paramètre de la variable DQR - Data Quality Ratio, elle év
 st.dataframe(data.describe()['DQR'])
 
 titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
-plt(figure(figsize=(12,6)))
-plt(bar(titres, data.describe()['DQR'][1:].values))
-plt(show())
+st.title("Analyse des données")
+fig, ax = plt.subplots(figsize=(12, 6))
+ax.bar(titres, data['DQR'][1:].values)
+ax.set_xlabel('Statistiques')
+ax.set_ylabel('Valeurs')
+ax.set_title('Diagramme en barres des statistiques descriptives de DQR')
+st.pyplot(fig)
+
 
 st.write("Il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables, selon la Commission Européenne.")
 st.divider()

@@ -52,10 +52,7 @@ st.pyplot(fig)
 fig = px.box(data, y="DQR", title="Box Plot de DQR")
 st.dataframe(data)
 st.plotly_chart(fig)
-st.write("""
-Ce box plot montre la distribution des valeurs de la colonne DQR. 
-Les lignes horizontales indiquent les quartiles, et les points au-dessus ou en dessous des "whiskers" sont des outliers.
-""")
+st.write("Ce box plot montre la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles, et les points au-dessus ou en dessous des "whiskers" sont des outliers.")
 
 st.write("Il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables, selon la Commission Européenne.")
 st.divider()

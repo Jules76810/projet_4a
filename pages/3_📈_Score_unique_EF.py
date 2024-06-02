@@ -29,7 +29,26 @@ fig = px.histogram(data, x="Score unique EF", title="Histogramme de Score Unique
 st.plotly_chart(fig)
 st.write("Cet histogramme montre la distribution des valeurs de la colonne Score Unique EF. Les barres représentent la fréquence des différentes valeurs dans l'ensemble des données.")
 
-
+variables = ['Changement climatique',
+       "Appauvrissement de la couche d'ozone", "Rayonnements ionisants",
+       "Formation photochimique d'ozone", "Particules fines",
+       'effets_toxico_non_cancer', 'effets_toxico_cancer',
+       'Acidification terrestre et eaux douces', 'Eutrophisation eaux douces',
+       'Eutrophisation marine', 'Eutrophisation terrestre',
+       "Écotoxicité pour écosystèmes aquatiques d'eau douce",
+       'Utilisation du sol', 'Épuisement des ressources eau',
+       'Épuisement des ressources énergétiques',
+       'Épuisement des ressources minéraux']
+len(variables)
+df = data[data["DQR"]<3]
+variables_EF = res = [*['Score unique EF'], *variables]
+df = df[variables_EF]
+corr = df.corr()
+mask = np.triu(np.ones_like(corr, dtype=bool))
+f, ax = plt.subplots(figsize=(10, 7))
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+sns.heatmap(corr, mask=mask, cmap=cmap, annot=True, vmin=-1, vmax=1)
+st.pyplot(f)
 
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

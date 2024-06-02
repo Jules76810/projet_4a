@@ -40,7 +40,7 @@ st.dataframe(data.describe()['DQR'])
 titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
 st.title("Analyse des données")
 fig, ax = plt.subplots(figsize=(12, 6))
-ax.bar(titres, data['DQR'][1:].values)
+ax.bar(titres, ['DQR'][1:].values)
 ax.set_xlabel('Statistiques')
 ax.set_ylabel('Valeurs')
 ax.set_title('Diagramme en barres des statistiques descriptives de DQR')

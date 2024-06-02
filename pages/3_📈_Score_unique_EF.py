@@ -29,3 +29,6 @@ min_EF, max_EF, mean_EF = st.columns(3)
 min_EF.metric("Min", np.round(df['Score unique EF'].min(), 3))
 max_EF.metric("Max", np.round(df['Score unique EF'].max(), 3))
 mean_EF.metric("Moyenne", np.round(df['Score unique EF'].mean(), 3))
+
+st.sidebar.title('À propos')
+st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

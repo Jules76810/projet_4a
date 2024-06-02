@@ -38,7 +38,7 @@ dqr_value = st.select_slider('Qualité de la donnée',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
 
-st.describe(data)['DQR']
+st.dataframe(data.describe()['DQR'])
 
 df = data[data["DQR"]<dqr_value]
 st.dataframe(df)

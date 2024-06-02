@@ -18,7 +18,7 @@ st.write("La base de données Agribalyse")
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
-st.caption('Base de données publics régit par plusieurs organismes nationaux tels que : L'ADEME et l'INRAE ainsi que des instituts techniques agricoles et agroalimentaires...')
+st.caption("Base de données publics régit par plusieurs organismes nationaux tels que : L'ADEME, l'INRAE ainsi que des instituts techniques agricoles et agroalimentaires...")
 
 st.header('La base de données AgriBalyse')
 st.write("Quelques mots sur la base de données")

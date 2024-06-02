@@ -34,10 +34,10 @@ st.image("https://autrecuisine.fr/warehouse/cache/large/poster_5f733477321f3.jpg
 
 
 st.header('Qualité de la donnée:')
-dqr_value = st.select_slider('Qualité de la donné',
+dqr_value = st.select_slider('Qualité de la donnée',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
-
+st.data.describe()['DQR']
 
 df = data[data["DQR"]<dqr_value]
 st.dataframe(df)

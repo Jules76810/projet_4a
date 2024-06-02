@@ -49,7 +49,7 @@ ax.set_ylabel('Valeurs')
 ax.set_title('Diagramme en barres des statistiques descriptives de DQR')
 st.pyplot(fig)
 
-fig = px.box(data, y="DQR", title="Box Plot de DQR")
+fig = px.box(data, x="DQR", title="Box Plot de DQR")
 st.dataframe(data)
 st.plotly_chart(fig)
 st.write("Ce box plot montre la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles.")

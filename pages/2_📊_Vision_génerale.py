@@ -37,7 +37,7 @@ st.header('Qualité de la donnée:')
 st.write("Étude du paramètre de la variable DQR - Data Quality Ratio, elle évalue la fiabilité des données et préconise une utilisation des données les plus fiables.")
 st.dataframe(data.describe()['DQR'])
 st.titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
-st.dataframe(plt.figure(figsize=(12,6))
+st.dataframe(plt.figure(figsize=(12,6)))
 st.dataframe(plt.bar(titres, data.describe()['DQR'][1:].values))
 st.dataframe(plt.show())
 st.write("Il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables, selon la Commission Européenne.")

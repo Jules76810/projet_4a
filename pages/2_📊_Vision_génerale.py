@@ -38,7 +38,7 @@ dqr_value = st.select_slider('Qualité de la donnée',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
 
-st.data.describe()['DQR']
+
 
 df = data[data["DQR"]<dqr_value]
 st.dataframe(df)
@@ -47,7 +47,7 @@ lignes_df, cols_df= st.columns(2)
 lignes_df.metric("Produits", str(df.shape[0]))
 cols_df.metric("Paramètres", str(df.shape[1]))
 a = np.round(df.shape[0] / data.shape[0],3)*100
-st.write("Porcentage de produits gardés (par rapport au total) :", a, " %")
+st.write("Pourcentage de produits gardés (par rapport au total) :", a, " %")
 st.divider()
 
 variables = ['Changement climatique',

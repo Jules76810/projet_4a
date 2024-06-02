@@ -219,6 +219,7 @@ centroids = kmeans.cluster_centers_
 centroids
 
 
-
+st.sidebar.title('À propos')
+st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')
 
 

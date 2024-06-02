@@ -22,7 +22,6 @@ data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "eff
 st.title('Analyse des Données avec Streamlit')
 st.subheader('Exploration des données avec un Histogramme')
 st.write("Voici un aperçu des données utilisées pour créer l'histogramme :")
-st.dataframe(data)
 desc = data.describe()
 st.write(desc)
 fig = px.histogram(desc, x="Score Unique EF", title="Histogramme de Score Unique EF")

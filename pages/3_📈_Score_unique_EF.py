@@ -57,6 +57,7 @@ top_variables = pd.DataFrame(df.corr()['Score unique EF'].sort_values(ascending=
 top_variables = top_variables.reset_index()
 top_variables = top_variables.iloc[1:, :]
 st.dataframe(top_variables)
+st.write("Choix de travailler avec les 5 variables les plus corrélées avec le score unique EF malgré le fait que ce ne soit pas les variables qui possèdent le plus de pondération dans le calcul de ce dernier.")
 
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

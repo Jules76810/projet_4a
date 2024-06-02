@@ -43,6 +43,7 @@ len(variables)
 df = data[data["DQR"]<3]
 variables_EF = res = [*['Score unique EF'], *variables]
 df = df[variables_EF]
+st.title("Analyse des données avec la corrélation des indicateurs avec le score unique EF.")
 corr = df.corr()
 mask = np.triu(np.ones_like(corr, dtype=bool))
 f, ax = plt.subplots(figsize=(10, 7))

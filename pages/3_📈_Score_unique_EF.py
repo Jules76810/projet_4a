@@ -51,5 +51,9 @@ cmap = sns.diverging_palette(230, 20, as_cmap=True)
 sns.heatmap(corr, mask=mask, cmap=cmap, annot=True, vmin=-1, vmax=1)
 st.pyplot(f)
 
+corr = df.corr()['Score unique EF']
+st.write("Corrélation décroissante avec le Score unique EF:")
+st.write(corr)
+
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

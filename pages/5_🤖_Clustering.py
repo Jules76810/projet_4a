@@ -61,3 +61,6 @@ st.plotly_chart(fig)
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
 st.plotly_chart(fig)
 
+fig, ax = plt.subplots()
+sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
+st.pyplot(fig)

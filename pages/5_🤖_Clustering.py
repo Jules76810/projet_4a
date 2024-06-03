@@ -47,6 +47,8 @@ top_5_var = ["Particules fines",
                     "effets_toxico_cancer"]
 
 
+ds = df[variables]
+
 k = 3
 kmeans = KMeans(n_clusters=k, n_init="auto")
 kmeans.fit(ds)

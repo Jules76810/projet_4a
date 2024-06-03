@@ -45,9 +45,7 @@ top_5_var = ["Particules fines",
                     "Changement climatique",
                     "Eutrophisation terrestre",
                     "effets_toxico_cancer"]
-df_selection = df[cols_importantes]
 
-ds = df[variables]
 
 k = 3
 kmeans = KMeans(n_clusters=k, n_init="auto")

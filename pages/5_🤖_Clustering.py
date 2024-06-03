@@ -34,17 +34,8 @@ variables_EF = res = [*['Score unique EF'], *variables]
 df = df[variables_EF]
 corr = df.corr()
 
-cols_importantes = ["Score unique EF",
-                    "Particules fines",
-                    "Acidification terrestre et eaux douces",
-                    "Changement climatique",
-                    "Eutrophisation terrestre",
-                    "effets_toxico_cancer"]
-top_5_var = ["Particules fines",
-                    "Acidification terrestre et eaux douces",
-                    "Changement climatique",
-                    "Eutrophisation terrestre",
-                    "effets_toxico_cancer"]
+
+
 
 
 ds = df[variables]

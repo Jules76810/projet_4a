@@ -43,7 +43,6 @@ kmeans.fit(ds)
 
 centroids = kmeans.cluster_centers_
 
-kmeans.labels_
 df['cluster'] = kmeans.labels_
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
@@ -51,3 +50,10 @@ cluster_counts.columns = ['cluster', 'count']
 st.write("Comptes des clusters :")
 st.dataframe(cluster_counts)
 
+
+cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
+cluster_counts.columns = ['cluster', 'count']
+
+fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Distribution des Clusters')
+
+st.plotly_chart(fig)

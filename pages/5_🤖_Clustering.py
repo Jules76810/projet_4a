@@ -57,3 +57,7 @@ cluster_counts.columns = ['cluster', 'count']
 fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Distribution des Clusters')
 
 st.plotly_chart(fig)
+
+fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
+st.plotly_chart(fig)
+

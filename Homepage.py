@@ -6,7 +6,7 @@ st.title('Projet 4A - Traitement de données alimentaires')
 
 st.write("Bienvenue sur notre application permettant de mieux comprendre notre projet sur le traitement des données alimentaires au sujet de la base de données Agribalyse.")
 
-st.page_link("Homepage.py", label="Homepage", icon="🏠")
+st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 st.page_link("pages/1_📚_Introduction.py", label="Introduction 📚", icon="1️⃣")
 st.page_link("pages/2_📊_Vision_génerale.py", label="Vision génerale 📊", icon="2️⃣")
 st.page_link("pages/3_📈_Score_unique_EF.py", label="Score Unique EF 📈", icon="3️⃣")

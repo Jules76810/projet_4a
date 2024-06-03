@@ -35,21 +35,21 @@ df = df[variables_EF]
 corr = df.corr()
 
 
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+
 
 
 ds = df[variables]
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+
 k = 3
 kmeans = KMeans(n_clusters=k, n_init="auto")
 kmeans.fit(ds)
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
-centroids = kmeans.cluster_centers_
+
+
 kmeans.labels_
 df['cluster'] = kmeans.labels_
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
 cluster_counts.columns = ['cluster', 'count']
 st.write("Comptes des clusters :")
 st.dataframe(cluster_counts)
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+

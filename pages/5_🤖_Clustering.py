@@ -40,9 +40,7 @@ corr = df.corr()
 
 ds = df[variables]
 
-k = 3
-kmeans = KMeans(n_clusters=k, n_init="auto")
-kmeans.fit(ds)
+
 
 
 kmeans.labels_

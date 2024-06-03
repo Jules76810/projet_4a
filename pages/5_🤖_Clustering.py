@@ -43,7 +43,7 @@ kmeans.fit(ds)
 
 centroids = kmeans.cluster_centers_
 
-
+kmeans.labels_
 df['cluster'] = kmeans.labels_
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()

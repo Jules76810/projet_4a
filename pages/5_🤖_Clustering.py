@@ -19,6 +19,11 @@ data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-82
 cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})
 
+df = data[data["DQR"]<3]
+variables_EF = res = [*['Score unique EF'], *variables]
+df = df[variables_EF]
+corr = df.corr()
+
 df.corr()['Score unique EF'].sort_values(ascending=False)[1:6]
 cols_importantes = ["Score unique EF",
                     "Particules fines",

@@ -34,7 +34,6 @@ variables_EF = res = [*['Score unique EF'], *variables]
 df = df[variables_EF]
 corr = df.corr()
 
-df.corr()['Score unique EF'].sort_values(ascending=False)[1:6]
 cols_importantes = ["Score unique EF",
                     "Particules fines",
                     "Acidification terrestre et eaux douces",

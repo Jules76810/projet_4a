@@ -35,15 +35,15 @@ df = df[variables_EF]
 corr = df.corr()
 
 
-
-
-
 ds = df[variables]
 
+k = 3
+kmeans = KMeans(n_clusters=k, n_init="auto")
+kmeans.fit(ds)
+
+centroids = kmeans.cluster_centers_
 
 
-
-kmeans.labels_
 df['cluster'] = kmeans.labels_
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()

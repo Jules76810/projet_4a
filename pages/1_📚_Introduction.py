@@ -22,11 +22,9 @@ st.caption("Base de données publique régit par plusieurs organismes nationaux 
 
 st.header('La base de données AgriBalyse')
 st.write("Quelques mots sur la base de données :")
-st.write(" 
+st.write("L’analyse du cycle de vie est une méthode de calcul de l’impact environnemental d’un produit. Elle repose sur la norme ISO 14040 dont la méthode comporte 4 principales étapes : 
 
-L’analyse du cycle de vie est une méthode de calcul de l’impact environnemental d’un produit. Elle repose sur la norme ISO 14040 dont la méthode comporte 4 principales étapes : 
-
-La définition du projet, c’est à dire cibler et présenter le produit à analyser 
+         La définition du projet, c’est à dire cibler et présenter le produit à analyser 
 Analyse de l’inventaire du cycle de vie, c’est donc faire le bilan de matière et d’énergie sur l’ensemble de la chaine de production, du transport... depuis la création du produit jusqu’à la fin de son utilisation et au-delà. 
 Evaluation des impacts, selon la méthode “midpoint” ou “endpoint” 
 Interprétation des résultats obtenus 

@@ -24,10 +24,12 @@ df2 = data[data["DQR"]<3]
 df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avion',
        'Livraison', "Matériau d'emballage", 'Préparation', 'DQR'],axis=1)
 
-groupes = list(df2["Groupe d'aliment"].unique())
-sous_groupes = list(df2["Sous-groupe d'aliment"].unique())
-
+groupes = (df2["Groupe d'aliment"].unique())
+sous_groupes = (df2["Sous-groupe d'aliment"].unique())
+st.header("Articulation des groupes et sous groupes d'aliments dans la base de donnée Agribalyse")
+st.caption("Ci-dessous les 10 groupes qui composent la base de donnée.")
 st.write(groupes)
+st.caption("Ci-dessous les 54 sous-groupes qui composent la base de donnée.")
 st.write(sous_groupes)
 
 produits = []

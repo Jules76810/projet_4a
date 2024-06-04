@@ -27,6 +27,9 @@ df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avio
 groupes = list(df2["Groupe d'aliment"].unique())
 sous_groupes = list(df2["Sous-groupe d'aliment"].unique())
 
+st.write(groupes)
+st.write(sous_groupes)
+
 produits = []
 produit_1 = 'Comté'
 produit_2 = 'Yaourt, lait fermenté ou spécialité laitière, nature'

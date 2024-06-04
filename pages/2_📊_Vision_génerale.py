@@ -54,7 +54,6 @@ st.dataframe(data.describe()['DQR'])
 st.caption("On retrouve une moyenne ainsi qu'une médiane d'une valeure approximative de 2,7. De plus, on peut observer un maximum de 4,87 et un minimum de 1,2 ce qui signifie une grande hétérogénéité entre la qualité des produits de la base de données. ")
 
 fig = px.box(data, x="DQR", title="Box Plot de DQR")
-st.dataframe(data)
 st.plotly_chart(fig)
 st.write("Ce box plot montre la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles.")
 

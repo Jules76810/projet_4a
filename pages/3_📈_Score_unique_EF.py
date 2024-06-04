@@ -20,8 +20,9 @@ st.title('Projet 4A - Traitement de données alimentaires')
 st.header("Le score unique EF")
 st.write("Le score unique EF est la valeur préconisée par la Commission Européenne. Le Score Unique EF regroupe et représente les différents indicateurs ayant une influence environnementale. On peut notamment voir la pondération des différents facteurs qui forme ce score sur le tableau ci-dessous.")
 st.image("https://doc.agribalyse.fr/~gitbook/image?url=https%3A%2F%2F2407839794-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-LpO7Agg1DbhEBNAvmHP%252F-MLmGl1xWNUdFGoOBo9f%252F-MLmGoORnso9M46c0PtM%252Fjrc.png%3Falt%3Dmedia%26token%3D9da03594-5db3-433b-9461-c24e23ee5e1c&width=768&dpr=2&quality=100&sign=4fe1c17ceedc8702a665f9d5c511f618313f5439678e76fc2ef954da1cd9c621")
+st.write("On observe notamment que le changement climatique, les particules fines, l'épuisement des ressources en eau, l'épuisement des ressources énergétiques et l'utilisation du sol sont les 5 facteurs les plus importants qui représentent le score unique EF.")
+st.caption("À eux 5, ils pondèrent pour 54,79 % du Score Unique EF. À noter que le changement climatique pondère à lui seul pour 21,06 % du Score Unique EF."
 
-st.title('Analyse des Données avec Streamlit')
 st.subheader('Exploration des données avec un Histogramme')
 st.write("Voici un aperçu des données utilisées pour créer l'histogramme :")
 st.dataframe(data)

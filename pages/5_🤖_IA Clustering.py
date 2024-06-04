@@ -16,6 +16,8 @@ st.set_page_config(page_title="IA Clustering", initial_sidebar_state='auto', lay
 st.title('Projet 4A - Traitement de données alimentaires')
 st.title("IA Clustering")
 st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+st.image('IA.png')
+st.divider()
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
 cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})

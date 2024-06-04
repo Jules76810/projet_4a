@@ -16,7 +16,7 @@ st.title('Projet 4A - Traitement de données alimentaires')
 st.title("Comparaison des couples de produits")
 
 st.write("Nous avons décidé de former des couples de produits pour répondre à notre problématique d'origine :")
-st.write("- Quel est l'impact de certains produits similaires appartenantx au même groupe d'aliment ?")
+st.write("- Est-ce que l'impact environnemental est le même lorsque l'on compare des produits similaires appartenants au même groupe d'aliment  ?")
 data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')
 cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})

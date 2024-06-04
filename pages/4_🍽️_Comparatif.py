@@ -33,7 +33,7 @@ st.caption("Ci-dessous les 54 sous-groupes qui composent la base de donnée.")
 st.write(sous_groupes)
 st.divider()
 st.header("Choix des couples")
-st.write("Le choix des couples s'est fait de manière manuelle. Nous avons délibéremment choisi des produits du quotidien auxquels nous pouvions réellement avoir des doutes sur quel produit avait le plus grand impact environnemental.")
+st.write("Le choix des couples s'est fait de manière manuelle. Nous avons délibéremment choisi des produits du quotidien sur lesquels nous pouvions avoir des doutes sur le produit ayant plus grand impact environnemental.")
 
 st.write ("Vous pouvez retrouvez ci-dessous la liste des couples que nous avons pu choisir.")
 produits = []

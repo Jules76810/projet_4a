@@ -54,14 +54,14 @@ st.dataframe(cluster_counts)
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
 cluster_counts.columns = ['cluster', 'count']
-
+st.caption("On remarque que 3 groupes parmi toutes les données ont été crées. Parmi ces derniers, on peut voir un groupe majoritaire contenant près de 1577 produits.")
 fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Distribution des Clusters')
 
 st.plotly_chart(fig)
 
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
 st.plotly_chart(fig)
-
+st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on identifie clairement un groupe comprenant un faible impact environnemental, un autre avec un impact environnemental moyen et un dernier avec un impact environnemental fort.")
 fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)

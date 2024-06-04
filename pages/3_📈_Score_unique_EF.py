@@ -27,7 +27,7 @@ st.subheader('Comment est distribué le Score Unique EF ?')
 
 fig = px.histogram(data, x="Score unique EF", title="Histogramme de Score Unique EF")
 st.plotly_chart(fig)
-st.write("Cet histogramme montre la distribution des valeurs de la colonne Score Unique EF. Les barres représentent la fréquence des différentes valeurs dans l'ensemble des données.")
+st.write("Cet histogramme montre la distribution des valeurs du Score Unique EF est clairement concentrée vers un score ne dépassant pas la valeur unique de 0,5.")
 
 variables = ['Changement climatique',
        "Appauvrissement de la couche d'ozone", "Rayonnements ionisants",
@@ -43,7 +43,7 @@ len(variables)
 df = data[data["DQR"]<3]
 variables_EF = res = [*['Score unique EF'], *variables]
 df = df[variables_EF]
-st.title("Analyse des données avec la corrélation des indicateurs avec le score unique EF")
+st.title("Analyse de la corrélation entre les 16 indicateurs de l'ACV et le score unique EF")
 corr = df.corr()
 mask = np.triu(np.ones_like(corr, dtype=bool))
 f, ax = plt.subplots(figsize=(10, 7))
@@ -52,12 +52,13 @@ sns.heatmap(corr, mask=mask, cmap=cmap, annot=True, vmin=-1, vmax=1)
 st.pyplot(f)
 
 corr = df.corr()['Score unique EF']
-st.write("Variables les plus corrélées décroissantes avec le Score unique EF:")
+st.write("Tableau décroissant des variables les plus corrélées avec le Score unique EF")
 top_variables = pd.DataFrame(df.corr()['Score unique EF'].sort_values(ascending=False))
 top_variables = top_variables.reset_index()
 top_variables = top_variables.iloc[1:, :]
 st.dataframe(top_variables)
-st.write("Choix de travailler avec les 5 variables les plus corrélées avec le score unique EF malgré le fait que ce ne soit pas les variables qui possèdent le plus de pondération dans le calcul de ce dernier.")
+st.write("On a pu observer précédemment que les 5 variables qui pondéraient le plus le Score unique EF étaient le changement climatique, les particules fines, l'épuisement des ressources en eau, l'épuisement des ressources énergétiques et l'utilisation du sol. En revanche, on remarque que les 5 variables les plus corrélées sont : Les particules fines, l'acidification terrestre et eaux douces, le changement climatique, l'eutrophisation terrestre et les effets toxicologiques cancérigènes.")
+st.caption("Pour la suite de notre projet, nous avons fait le choix de travailler sur les 5 variables les plus corrélées avec le score unique EF malgré le fait que ce ne soit pas les variables qui possèdent le plus de pondération dans le calcul de ce dernier.")
 
 df.corr()['Score unique EF'].sort_values(ascending=False)[1:6]
 cols_importantes = ["Score unique EF",

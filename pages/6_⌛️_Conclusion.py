@@ -31,8 +31,10 @@ st.write("Si vous souhaitez faire des retours sur la base de données Agribalyse
 st.page_link("https://doc.agribalyse.fr/documentation/nous-contactez/contribuer-aux-travaux-agribalyse-r", label="Page de contact", icon="📇")
 
 st.divider()
-st.write("**Merci d'avoir suivi notre projet, nous vous invitons désormais à revenir à la page d'accueil avec le lien ci-dessous.**")
+st.write("**Merci d'avoir suivi notre projet, nous vous invitons désormais à aller regarder nos références bibliographiques ou à revenir à la page d'accueil avec le lien ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
+st.page_link("pages/7_☑️_Références_Bibliographiques.py", label="Références Bibliographiques ☑️", icon="7️⃣")
+st.image('CONCLU.png')
 
 
 st.sidebar.title('À propos')

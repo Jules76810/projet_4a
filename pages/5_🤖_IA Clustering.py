@@ -66,7 +66,7 @@ st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on 
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
 st.plotly_chart(fig)
 
-st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes intermédiaires.")
+st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes.")
 fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)

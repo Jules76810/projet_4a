@@ -76,7 +76,7 @@ df_selection = df[cols_importantes]
 st.divider()
 st.write("**Nous vous laissons poursuivre avec la page 4 sur la comparaison de couples de produits issus de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
-st.page_link("pages/4_🍽️_Comparatif.py", label="Comparatif 🍽️", icon="4️⃣")
+st.page_link("pages/4_🍽️_Comparaison_des_produits.py", label="Comparaison des produits 🍽️", icon="4️⃣")
 
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

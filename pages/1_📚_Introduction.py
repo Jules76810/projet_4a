@@ -15,7 +15,7 @@ from sklearn.cluster import KMeans
 st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
 st.title('Introduction')
 st.write("La base de données Agribalyse")
-expander.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWXNh4BK9vBW7Qw2ZhfBL39-uxW2W6Q6FDg&s")
+st.image('Intro.png')
 texte = """
 Chaque année le marché mondial de l’alimentation ne cesse de croître. Sans même prendre en compte les boissons, ce marché devrait dépasser les 9 000 milliards d’euros en 2024. L’année précédente le chiffre d’affaires mondiale ne représentait que 8 470 milliards d’euros. On remarque alors une hausse de 7 % en 2024. Par ailleurs, dés 2026 ce marché devrait peser près de 10 000 milliards d’euros, avec une hausse annuelle estimée à 6 %.
 Malgré un marché en pleine expansion, les entreprises agroalimentaires font face à des modes de consommations qui évoluent. De nos jours, l’impact environnemental des produits de consommation joue en rôle prépondérant au sein des entreprises du monde entier. On remarque notamment l’importance d’une consommation dite responsable. Toutefois, les consommateurs restent accrochés à la volonté d’adopter des comportements alimentaires en adéquation avec le bien-manger. En effet, ces dernières années, les consommateurs ont tendance à prêter de plus en plus attention aux critères environnementaux liés à leurs produits. Les origines des produits qu’ils consomment ou le cahier des charges gage de qualité sont des facteurs déterminants dans le choix des produits qu’ils achètent.

@@ -105,6 +105,9 @@ if confirm:
     max_variable.metric("Max", np.round(df[variable_select].max(), 3))
     mean_variable.metric("Moyenne", np.round(df[variable_select].mean(), 3))
 
+st.write("Nous vous laissons poursuivre avec la page 3 sur le Score Unique EF de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.")
+st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
+st.page_link("pages/3_📈_Score_unique_EF.py", label="Score Unique EF 📈", icon="3️⃣")
 
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

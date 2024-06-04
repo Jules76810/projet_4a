@@ -31,7 +31,11 @@ st.caption("Ci-dessous les 10 groupes qui composent la base de donnée.")
 st.write(groupes)
 st.caption("Ci-dessous les 54 sous-groupes qui composent la base de donnée.")
 st.write(sous_groupes)
+st.divider()
+st.head("Choix des couples")
+st.write("Le choix des couples s'est fait de manière manuelle. Nous avons délibéremment choisi des produits du quotidien auxquels nous pouvions réellement avoir des doutes sur quel produit avait le plus grand impact environnemental.")
 
+st.write ("Vous pouvez retrouvez ci-dessous la liste des couples que nous avons pu choisir.")
 produits = []
 produit_1 = 'Comté'
 produit_2 = 'Yaourt, lait fermenté ou spécialité laitière, nature'
@@ -76,7 +80,7 @@ produits.append(produit_2)
 couple_7 = df2[(df2['Nom du Produit en Français'] == produit_1) | (df2['Nom du Produit en Français'] == produit_2)]
 couple_7["Couple"]=["Couple_7","Couple_7"]
 produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,couple_6 ,couple_7])
-
+st.write(produits_cibles)
 top_5_var = ['Particules fines', 'Acidification terrestre et eaux douces', 'Changement climatique', 'Eutrophisation terrestre', 'effets_toxico_cancer']
 scaler = preprocessing.MinMaxScaler()
 d = scaler.fit_transform(df2[top_5_var])

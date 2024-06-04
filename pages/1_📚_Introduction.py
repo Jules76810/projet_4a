@@ -24,6 +24,7 @@ Il existe désormais beaucoup d’outils considérant les procédés de producti
 """
 st.markdown(texte)
 st.divider()
+st.header("Quel est l'objectif de notre projet ?")
 st.write("**Notre projet consiste à étudier des données alimentaires tout en étant capable de les exploiter avec efficacité. C’est pourquoi nous allons nous appuyer sur une base de données publique française nommée “Agribalyse” utilisant cette méthode d’évaluation pour tenter d’établir des conclusions sur les produits alimentaires quotidiennement acheté par les consommateurs. Dans ce rapport, nous allons dans un premier temps exprimer le contexte du projet, puis nous présenterons notre problématique, ensuite le plan d’action et les paramétrages seront expliqués et enfin nous exposerons et analyserons les résultats.**")
 
 st.header('La base de données AgriBalyse')

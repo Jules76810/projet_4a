@@ -13,6 +13,7 @@ import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 
 st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
+st.title('Projet 4A - Traitement de données alimentaires')
 st.title('Introduction')
 st.header("Quel est le contexte mondiale du secteur agroalimentaire ?")
 st.image('Intro.png')

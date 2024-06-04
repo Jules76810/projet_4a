@@ -95,6 +95,7 @@ L’ACV est dite multicritères et multi-étapes. En effet, plusieurs critères 
 st.markdown(texte)
 st.divider()
 st.write("Nous vous laissons poursuivre avec la page 2 sur la vision générale de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.")
+st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 st.page_link("pages/2_📊_Vision_génerale.py", label="Vision génerale 📊", icon="2️⃣")
 
 st.sidebar.title('À propos')

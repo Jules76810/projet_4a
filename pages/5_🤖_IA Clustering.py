@@ -65,5 +65,10 @@ fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)
 
+st.divider()
+st.write("Nous vous laissons poursuivre avec la page 6 sur la conclusion de notre projet ou revenir à la page d'accueil avec les liens ci-dessous.")
+st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
+st.page_link("pages/6_⌛️_Conclusion.py", label="Conclusion ⌛️", icon="6️⃣")
+
 st.sidebar.title('À propos')
 st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

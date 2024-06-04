@@ -21,7 +21,7 @@ st.header("Conclusion")
 
 
 st.divider()
-st.write("Merci d'avoir suivi notre projet, nous vous invitons désormais à revenir à la page d'accueil avec le lien ci-dessous.")
+st.write("**Merci d'avoir suivi notre projet, nous vous invitons désormais à revenir à la page d'accueil avec le lien ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 
 

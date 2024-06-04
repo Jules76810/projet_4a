@@ -34,11 +34,11 @@ st.divider()
 st.image("https://autrecuisine.fr/warehouse/cache/large/poster_5f733477321f3.jpg.png")
 
 
-st.header('Qualité de la donnée:')
+st.header('Qualité de la donnée - DQR')
 st.write("Étude du paramètre de la variable DQR - Data Quality Ratio, elle évalue la fiabilité des données et préconise une utilisation des données les plus fiables.")
-st.dataframe(data.describe()['DQR'])
+dataframe(data.describe()['DQR'])
 titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
-st.title("Analyse des données")
+
 desc = data.describe()
 
 

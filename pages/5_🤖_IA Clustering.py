@@ -61,9 +61,9 @@ fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Dis
 
 st.plotly_chart(fig)
 
-st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on identifie clairement un groupe comprenant un faible impact environnemental, un autre avec un impact environnemental moyen et un dernier avec un impact environnemental fort.")
 
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
+st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on identifie clairement un groupe comprenant un faible impact environnemental, un autre avec un impact environnemental moyen et un dernier avec un impact environnemental fort.")
 st.plotly_chart(fig)
 
 st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes intermédiaires.")

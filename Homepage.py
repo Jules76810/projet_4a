@@ -13,6 +13,7 @@ st.page_link("pages/3_📈_Score_unique_EF.py", label="Score Unique EF 📈", ic
 st.page_link("pages/4_🍽️_Comparaison_des_produits.py", label="Comparaison des produits 🍽️", icon="4️⃣")
 st.page_link("pages/5_🤖_IA Clustering.py", label="IA Clustering 🤖", icon="5️⃣")
 st.page_link("pages/6_⌛️_Conclusion.py", label="Conclusion ⌛️", icon="6️⃣")
+st.page_link("pages/7_☑️_Références_Bibliographiques.py", label="Références Bibliographiques ☑️", icon="7️⃣")
 
 st.write("Pour vous familiariser ou en apprendre plus par vous même, vous pouvez notamment retrouvez la base de données Agribalyse en ligne en cliquant sur le lien de la page officielle de l'ADEME ci-dessous.")
 st.page_link("https://agribalyse.ademe.fr/", label="Page officielle Ademe", icon="🌎")

@@ -52,7 +52,7 @@ st.markdown(texte)
 
 
 
-expander = st.expander("Cliquez ici pour plus d'informations sur les 16 indicateurs qui oriente notre projet")
+expander = st.expander("Cliquez ici pour plus d'informations sur les 16 indicateurs.")
 expander.write(""" 
 
 Notre base de données est basée sur 16 indicateurs environnementaux qui sont fournis pour chaque produit :  

@@ -78,14 +78,6 @@ expander.image("https://agribalyse.ademe.fr/static/media/logo.e3e348f6.png")
 
 st.divider() # diviseur
 
-st.write("This text is between the horizontal rules.")
-st.divider()  # 👈 Another horizontal rule
-
-st.write("This text is between the horizontal rules.")
-st.caption('Mini text pour expliquer quelque chose')
-st.divider() 
-################
-
 st.header("L'ACV")
 st.caption('ACV = Analyse du Cycle de Vie')
 texte = """

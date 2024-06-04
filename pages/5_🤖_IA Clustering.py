@@ -64,3 +64,6 @@ st.plotly_chart(fig)
 fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)
+
+st.sidebar.title('À propos')
+st.sidebar.info('Cette application a été développée par Margaux BOYER, Marion DE CACQUERAY, Jules LEFORT et Laure WATERHOUSE.')

@@ -219,7 +219,7 @@ centroids = kmeans.cluster_centers_
 centroids
 
 st.divider()
-st.write("Nous vous laissons poursuivre avec la page 5 sur l'intégration de cluster avec l'aide d'une IA ou revenir à la page d'accueil avec les liens ci-dessous.")
+st.write("**Nous vous laissons poursuivre avec la page 5 sur l'intégration de cluster avec l'aide d'une IA ou revenir à la page d'accueil avec les liens ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 st.page_link("pages/5_🤖_IA Clustering.py", label="IA Clustering 🤖", icon="5️⃣")
 

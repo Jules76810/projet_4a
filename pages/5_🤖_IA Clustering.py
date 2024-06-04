@@ -15,7 +15,7 @@ from sklearn.cluster import KMeans
 st.set_page_config(page_title="IA Clustering", initial_sidebar_state='auto', layout="wide")
 st.title('Projet 4A - Traitement de données alimentaires')
 st.title("IA Clustering")
-st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
+st.write("L'utilisation d'une IA (Intelligence Artificielle) va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
 st.image('IA.png')
 st.divider()
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
@@ -56,7 +56,7 @@ st.dataframe(cluster_counts)
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
 cluster_counts.columns = ['cluster', 'count']
-st.caption("On remarque que 3 groupes parmi toutes les données ont été crées. Parmi ces derniers, on peut voir un groupe majoritaire contenant près de 1577 produits.")
+st.caption("On remarque que 3 groupes parmi toutes les données ont été crées. Parmi ces derniers, on peut voir un groupe majoritaire contenant près de 1547 produits.")
 fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Distribution des Clusters')
 
 st.plotly_chart(fig)

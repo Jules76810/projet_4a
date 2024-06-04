@@ -74,7 +74,7 @@ top_5_var = ["Particules fines",
                     "effets_toxico_cancer"]
 df_selection = df[cols_importantes]
 st.divider()
-st.write("Nous vous laissons poursuivre avec la page 4 sur la comparaison de couples de produits issus de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.")
+st.write("**Nous vous laissons poursuivre avec la page 4 sur la comparaison de couples de produits issus de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 st.page_link("pages/4_🍽️_Comparatif.py", label="Comparatif 🍽️", icon="4️⃣")
 

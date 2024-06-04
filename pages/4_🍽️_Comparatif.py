@@ -12,7 +12,7 @@ from sklearn import preprocessing
 import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 
-
+st.title('Projet 4A - Traitement de données alimentaires')
 st.title("Comparatif")
 
 data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')

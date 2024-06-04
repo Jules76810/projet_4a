@@ -15,7 +15,17 @@ from sklearn.cluster import KMeans
 st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
 st.title('Introduction')
 st.write("La base de données Agribalyse")
+expander.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWXNh4BK9vBW7Qw2ZhfBL39-uxW2W6Q6FDg&s")
+texte = """
+Chaque année le marché mondial de l’alimentation ne cesse de croître. Sans même prendre en compte les boissons, ce marché devrait dépasser les 9 000 milliards d’euros en 2024. L’année précédente le chiffre d’affaires mondiale ne représentait que 8 470 milliards d’euros. On remarque alors une hausse de 7 % en 2024. Par ailleurs, dés 2026 ce marché devrait peser près de 10 000 milliards d’euros, avec une hausse annuelle estimée à 6 %.
+Malgré un marché en pleine expansion, les entreprises agroalimentaires font face à des modes de consommations qui évoluent. De nos jours, l’impact environnemental des produits de consommation joue en rôle prépondérant au sein des entreprises du monde entier. On remarque notamment l’importance d’une consommation dite responsable. Toutefois, les consommateurs restent accrochés à la volonté d’adopter des comportements alimentaires en adéquation avec le bien-manger. En effet, ces dernières années, les consommateurs ont tendance à prêter de plus en plus attention aux critères environnementaux liés à leurs produits. Les origines des produits qu’ils consomment ou le cahier des charges gage de qualité sont des facteurs déterminants dans le choix des produits qu’ils achètent.
 
+Il existe désormais beaucoup d’outils considérant les procédés de production et d’acheminement du produit jusqu’au consommateur afin de réaliser des observations précises et détaillées. Par ailleurs, la normalisation de méthode d’évaluation permettant de réaliser des bilans environnementaux s’est largement développée au cours de ces dernières années. La méthode d’évaluation de l’ACV, Analyse du Cycle de Vie, est considérée comme la méthode la plus fiable afin d’estimer au maximum l’influence de chaque produit sur l’environnement de sa conception à sa consommation voire son recyclage. Ces analyses sont standardisées afin de prendre conscience de l'influence sur l’environnement des divers processus de production.
+**Notre projet consiste à étudier des données alimentaires tout en étant capable de les exploiter avec efficacité. C’est pourquoi nous allons nous appuyer sur une base de données publique française nommée “Agribalyse” utilisant cette méthode d’évaluation pour tenter d’établir des conclusions sur les produits alimentaires quotidiennement acheté par les consommateurs. Dans ce rapport, nous allons dans un premier temps exprimer le contexte du projet, puis nous présenterons notre problématique, ensuite le plan d’action et les paramétrages seront expliqués et enfin nous exposerons et analyserons les résultats. **
+"""
+st.markdown(texte)
+
+st.header('La base de données AgriBalyse')
 #ajouter une image
 st.image('Agribalyse-image1.png')
 st.caption("Base de données publique régit par plusieurs organismes nationaux tels que : L'ADEME, l'INRAE ainsi que des instituts techniques agricoles et agroalimentaires...")
@@ -34,7 +44,7 @@ Cette base de données peut servir dans différents domaines :
 **La recherche et l’enseignement** 
 Finalement, tous les produits sont définis selon 16 indicateurs représentant chacun un impact environnemental. Tous ces indicateurs sont calculés sur la base d’1 kilogramme de produit. """
 st.markdown(texte)
-st.header('La base de données AgriBalyse')
+
 st.write("Quelques mots sur la base de données :")
 
 expander = st.expander("Cliquez ici pour plus d'informations sur les 16 indicateurs qui oriente notre projet")

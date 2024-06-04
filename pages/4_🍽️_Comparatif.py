@@ -109,7 +109,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 
-
+st.write("Enfin, nous vous proposons de faire vos propres choix à travers les différents couples pour les comparer entre eux.")
 
 
 fig = go.Figure()

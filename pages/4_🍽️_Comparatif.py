@@ -98,7 +98,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 
-st.plotly_chart(fig)
+
 
 
 fig = go.Figure()
@@ -211,7 +211,7 @@ variables = ['Changement climatique',
 ds = df2[variables]
 
 
-centroids
+
 
 st.divider()
 st.write("**Nous vous laissons poursuivre avec la page 5 sur l'intégration de cluster avec l'aide d'une IA ou revenir à la page d'accueil avec les liens ci-dessous.**")

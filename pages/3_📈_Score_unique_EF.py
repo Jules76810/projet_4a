@@ -43,7 +43,7 @@ len(variables)
 df = data[data["DQR"]<3]
 variables_EF = res = [*['Score unique EF'], *variables]
 df = df[variables_EF]
-st.title("Analyse de la corrélation entre les 16 indicateurs de l'ACV et le score unique EF")
+st.header("Analyse de la corrélation entre les 16 indicateurs de l'ACV et le score unique EF")
 corr = df.corr()
 mask = np.triu(np.ones_like(corr, dtype=bool))
 f, ax = plt.subplots(figsize=(10, 7))

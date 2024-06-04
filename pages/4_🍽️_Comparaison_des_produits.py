@@ -204,6 +204,18 @@ fig.add_trace(go.Scatterpolar(
 
 st.plotly_chart(fig)
 
+fig = go.Figure()
+
+for i in range(14):  # Assuming you have 14 products
+    fig.add_trace(go.Scatterpolar(
+        r=test_triangle.iloc[i, :].values,
+        theta=top_5_var,
+        fill='toself',
+        name=produits_cibles['Nom du Produit en Français'].iloc[i],
+        visible='legendonly'  # Ensure traces are not selected when the figure is displayed
+    ))
+st.plotly_chart(fig)
+
 variables = ['Changement climatique',
  "Appauvrissement de la couche d'ozone",
  'Rayonnements ionisants',

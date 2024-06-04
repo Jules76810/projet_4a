@@ -22,6 +22,7 @@ data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "eff
 
 ## ici oui on l'affiche le dataset avec st
 st.header("Les données AgriBalyse brutes")
+st.write("Nous vous présentons ci-dessous la base de données complète d'Agribalyse. Plus de **2500** produits la composent.")
 st.dataframe(data)
 st.write(data.shape)
 cols_data, lignes_data = st.columns(2)
@@ -37,17 +38,13 @@ st.header('Qualité de la donnée:')
 st.write("Étude du paramètre de la variable DQR - Data Quality Ratio, elle évalue la fiabilité des données et préconise une utilisation des données les plus fiables.")
 st.dataframe(data.describe()['DQR'])
 
-
-titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
-st.title("Analyse des données")
-desc = data.describe()
-st.write(desc)
 fig, ax = plt.subplots(figsize=(12, 6))
 ax.bar(titres, desc['DQR'][1:].values)
 ax.set_xlabel('Statistiques')
 ax.set_ylabel('Valeurs')
 ax.set_title('Diagramme en barres des statistiques descriptives de DQR')
 st.pyplot(fig)
+st.caption("On retrouve une moyenne ainsi qu'une médiane d'une valeure approximative de 2,7. De plus, on peut observer un maximum de 4,87 et un minimum de 1,2 ce qui signifie une grande hétérogénéité entre les produits de la base de données. ")
 
 fig = px.box(data, x="DQR", title="Box Plot de DQR")
 st.dataframe(data)

@@ -59,13 +59,18 @@ fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Dis
 
 st.plotly_chart(fig)
 
+st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on identifie clairement un groupe comprenant un faible impact environnemental, un autre avec un impact environnemental moyen et un dernier avec un impact environnemental fort.")
+
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
 st.plotly_chart(fig)
-st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on identifie clairement un groupe comprenant un faible impact environnemental, un autre avec un impact environnemental moyen et un dernier avec un impact environnemental fort.")
+
+st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes intermédiaires.")
 fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)
+st.divider()
 
+st.write("On peut conclure que 3 groupes distincts sont répartis au travers des données selon leur impact environnemental. Par ailleurs, on peut mettre en avant que la majorité des produits sont contenus dans le groupe qui influe le moins l'environnement, environ 1500 produits sur les 1700 que l'on a pu selectionner.")
 st.divider()
 st.write("**Nous vous laissons poursuivre avec la page 6 sur la conclusion de notre projet ou revenir à la page d'accueil avec les liens ci-dessous.**")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")

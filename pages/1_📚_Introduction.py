@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 
 st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
 st.title('Introduction')
-st.write("La base de données Agribalyse")
+st.header("Quel est le contexte mondiale du secteur agroalimentaire ?")
 st.image('Intro.png')
 texte = """
 Chaque année le marché mondial de l’alimentation ne cesse de croître. Sans même prendre en compte les boissons, ce marché devrait dépasser les 9 000 milliards d’euros en 2024. L’année précédente le chiffre d’affaires mondiale ne représentait que 8 470 milliards d’euros. On remarque alors une hausse de 7 % en 2024. Par ailleurs, dés 2026 ce marché devrait peser près de 10 000 milliards d’euros, avec une hausse annuelle estimée à 6 %.

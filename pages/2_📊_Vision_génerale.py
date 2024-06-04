@@ -36,7 +36,7 @@ st.image("https://autrecuisine.fr/warehouse/cache/large/poster_5f733477321f3.jpg
 
 st.header('Qualité de la donnée - DQR')
 st.write("Étude du paramètre de la variable DQR - Data Quality Ratio, elle évalue la fiabilité des données et préconise une utilisation des données les plus fiables.")
-
+st.caption("Plus cette valeur est basse plus la donnée est fiable.")
 titres = ['mean', 'std', 'min', '25%', '50%', '75%', 'max']
 
 desc = data.describe()
@@ -48,18 +48,18 @@ ax.set_xlabel('Statistiques')
 ax.set_ylabel('Valeurs')
 ax.set_title('Diagramme en barres des statistiques descriptives de DQR')
 st.pyplot(fig)
-st.write("Cette figure nous donne un premier un aperçu sur la répartition de la qualité des données. La médiane et la moyenne ont des valeurs similaires. On observe également un écart-type assez faible ce qui nous indique que les données sont regroupées autour de la moyenne. ")
-st.write("On peut analyser en détail les statistiques via ce tableau.")
+st.write("Cette figure nous donne un premier un aperçu sur la répartition du DQR. La médiane et la moyenne ont des valeurs similaires aux alentours de 3. On observe également un écart-type assez faible ce qui nous indique que les données sont regroupées autour de la moyenne. ")
+st.write("On peut analyser en détail les statistiques via le tableau ci-dessous.")
 st.dataframe(data.describe()['DQR'])
-st.caption("On retrouve une moyenne ainsi qu'une médiane d'une valeure approximative de 2,7. De plus, on peut observer un maximum de 4,87 et un minimum de 1,2 ce qui signifie une grande hétérogénéité entre la qualité des produits de la base de données. ")
+st.caption("On retrouve une moyenne ainsi qu'une médiane d'une valeure de 2,7. De plus, on peut observer un maximum de 4,87 et un minimum de 1,2 ce qui signifie une grande hétérogénéité entre la qualité des produits de la base de données. ")
 st.divider()
 
 fig = px.box(data, x="DQR", title="Boîte à moustache de DQR")
 st.plotly_chart(fig)
-st.write("Ce box plot montre une fois de plus la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles.")
+st.write("Cette boîte à moustache montre une fois de plus la distribution des valeurs de la colonne DQR.")
 
 st.divider()
-st.write("Selon nos recherches et la commission Européenne, il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables.")
+st.write("Selon la Commission Européenne, il est conseillé de prendre les produits alimentaires avec un DQR égale ou inférieur à 3 afin d'utiliser les données les plus fiables.")
 st.write("Vous pouvez choisir la valeur de la qualité via le sélecteur ci-dessous.")
 st.caption("À noter que plus la valeur du DQR est faible, plus la donnée est fiable.")
 dqr_value = st.select_slider('Qualité de la donnée',

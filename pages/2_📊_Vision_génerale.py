@@ -61,6 +61,7 @@ st.write("Ce box plot montre une fois de plus la distribution des valeurs de la 
 st.divider()
 st.write("Selon nos recherches et la commission Européenne, il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables.")
 st.write("Vous pouvez choisir la valeur de la qualité via le sélecteur ci-dessous.")
+st.caption("À noter que plus la valeur du DQR est faible, plus la donnée est fiable.")
 dqr_value = st.select_slider('Qualité de la donnée',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)

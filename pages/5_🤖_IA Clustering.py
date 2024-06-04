@@ -56,7 +56,7 @@ st.dataframe(cluster_counts)
 
 cluster_counts = pd.DataFrame(df['cluster'].value_counts(), columns=['count']).reset_index()
 cluster_counts.columns = ['cluster', 'count']
-st.caption("On remarque que 3 groupes parmi toutes les données ont été crées. Parmi ces derniers, on peut voir un groupe majoritaire contenant près de 1547 produits.")
+st.caption("Parmi toutes les données, on remarque que 3 groupes ont été crées. On peut voir un groupe qui contient la majorité des données sélectionnées soit près de 1547 produits.")
 fig = px.bar(cluster_counts, x='cluster', y='count', color='cluster', title='Distribution des Clusters')
 
 st.plotly_chart(fig)
@@ -66,7 +66,7 @@ st.write("Dans ce graphique montrant les boîtes à moustache des 3 groupes, on 
 fig = px.box(df, x="cluster", y="Score unique EF", color="cluster", title="Box Plot par Cluster")
 st.plotly_chart(fig)
 
-st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes.")
+st.write("Dans ce graphique montrant uniquement le changement climatique des 3 groupes, on observe une nouvelle fois les 3 groupes présentés précédemment.")
 fig, ax = plt.subplots()
 sns.barplot(data=df, x="cluster", y="Changement climatique", hue="cluster", ax=ax)
 st.pyplot(fig)

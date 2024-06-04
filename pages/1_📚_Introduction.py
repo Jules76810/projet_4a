@@ -23,7 +23,7 @@ Malgré un marché en pleine expansion, les entreprises agroalimentaires font fa
 Il existe désormais beaucoup d’outils considérant les procédés de production et d’acheminement du produit jusqu’au consommateur afin de réaliser des observations précises et détaillées. Par ailleurs, la normalisation de méthode d’évaluation permettant de réaliser des bilans environnementaux s’est largement développée au cours de ces dernières années. La méthode d’évaluation de l’ACV, Analyse du Cycle de Vie, est considérée comme la méthode la plus fiable afin d’estimer au maximum l’influence de chaque produit sur l’environnement de sa conception à sa consommation voire son recyclage. Ces analyses sont standardisées afin de prendre conscience de l'influence sur l’environnement des divers processus de production.
 """
 st.markdown(texte)
-st.divider
+st.divider()
 st.write("**Notre projet consiste à étudier des données alimentaires tout en étant capable de les exploiter avec efficacité. C’est pourquoi nous allons nous appuyer sur une base de données publique française nommée “Agribalyse” utilisant cette méthode d’évaluation pour tenter d’établir des conclusions sur les produits alimentaires quotidiennement acheté par les consommateurs. Dans ce rapport, nous allons dans un premier temps exprimer le contexte du projet, puis nous présenterons notre problématique, ensuite le plan d’action et les paramétrages seront expliqués et enfin nous exposerons et analyserons les résultats.**")
 
 st.header('La base de données AgriBalyse')

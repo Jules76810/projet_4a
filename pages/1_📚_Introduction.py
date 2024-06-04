@@ -29,6 +29,8 @@ st.header('La base de données AgriBalyse')
 #ajouter une image
 st.image('Agribalyse-image1.png')
 st.caption("Base de données publique régit par plusieurs organismes nationaux tels que : L'ADEME, l'INRAE ainsi que des instituts techniques agricoles et agroalimentaires...")
+st.write("Quelques mots sur la base de données :")
+
 texte = """
 Ce projet Agribalyse est initié par l’institut de l’INRAE et l’agence de l’ADEME. En addition, ces deux organisations basent aussi leurs recherches sur le travail commun des instituts techniques agricoles et agroalimentaires. 
 
@@ -45,7 +47,7 @@ Cette base de données peut servir dans différents domaines :
 Finalement, tous les produits sont définis selon 16 indicateurs représentant chacun un impact environnemental. Tous ces indicateurs sont calculés sur la base d’1 kilogramme de produit. """
 st.markdown(texte)
 
-st.write("Quelques mots sur la base de données :")
+
 
 expander = st.expander("Cliquez ici pour plus d'informations sur les 16 indicateurs qui oriente notre projet")
 expander.write(""" 

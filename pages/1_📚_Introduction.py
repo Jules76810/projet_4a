@@ -26,7 +26,7 @@ Il existe désormais beaucoup d’outils considérant les procédés de producti
 st.markdown(texte)
 st.divider()
 st.header("Quel est l'objectif de notre projet ?")
-st.write("**Notre projet consiste à étudier des données alimentaires tout en étant capable de les exploiter avec efficacité. C’est pourquoi nous allons nous appuyer sur une base de données publique française nommée “Agribalyse” utilisant cette méthode d’évaluation pour tenter d’établir des conclusions sur les produits alimentaires quotidiennement acheté par les consommateurs. Dans ce rapport, nous allons dans un premier temps exprimer le contexte du projet, puis nous présenterons notre problématique, ensuite le plan d’action et les paramétrages seront expliqués et enfin nous exposerons et analyserons les résultats.**")
+st.write("**Notre projet consiste à étudier des données alimentaires tout en étant capable de les exploiter avec efficacité. C’est pourquoi nous allons nous appuyer sur une base de données publique française nommée “Agribalyse” utilisant cette méthode d’évaluation pour tenter d’établir des conclusions sur les produits alimentaires quotidiennement achetés par les consommateurs. Dans la suite de ce site internet, nous allons dans un premier temps présenter de manière générale la base de donnée, puis nous exposerons le paramêtre appelé Score unique EF, ensuite la comparaison des produits choisis et enfin avant de conclure nous utiliserons une IA (Intelligence Artificielle) pour analyser la base de donnée.**")
 
 st.header('La base de données AgriBalyse')
 #ajouter une image
@@ -37,7 +37,7 @@ st.write("Quelques mots sur la base de données :")
 texte = """
 Ce projet Agribalyse est initié par l’institut de l’INRAE et l’agence de l’ADEME. En addition, ces deux organisations basent aussi leurs recherches sur le travail commun des instituts techniques agricoles et agroalimentaires. 
 
-La base de données Agribalyse est une base de données française, publique et accessible à tous, fournissant des informations sur les impacts environnementaux des différents produits alimentaires transformés/ non transformés, biologiques et non biologiques. Au total, cette base possède plus de 200 références de produits agricoles français, 2500 produits transformés et des produits importés en France comme le thé, le café ou encore le chocolat. 
+La base de données Agribalyse est une base de données française, publique et accessible à tous, fournissant des informations sur les impacts environnementaux des différents produits alimentaires transformés / non transformés, biologiques et non biologiques. Au total, cette base possède plus de 200 références de produits agricoles français, 2500 produits transformés et des produits importés en France comme le thé, le café ou encore le chocolat. 
 
 Cette base de données est depuis 2013 la référence en termes de représentation des impacts environnementaux des produits agricoles ou alimentaires selon la méthodologie de l’ACV. 
 
@@ -57,20 +57,21 @@ expander.write("""
 
 Notre base de données est basée sur 16 indicateurs environnementaux qui sont fournis pour chaque produit :  
 
-- **Le changement climatique** 
-- **Les particules fines** 
-- **L’épuisement des ressources en eau** 
-- **L’épuisement des ressources énergétiques** 
-- **L’usage des terres** 
-- **L’épuisement des ressources en minéraux** 
-- **L’appauvrissement de la couche d’ozone** 
-- **L’acidification** 
-- **L’effet des radiations ionisantes sur la santé** 
-- **La formation photochimique d’ozone** 
-- **L’eutrophisation terrestre** 
-- **L’eutrophisation marine** 
-- **L’eutrophisation d’eau douce** 
-- **L’écotoxicité d’eau douce** 
+- **Le changement climatique**, ce dernier indicateur permet d’avoir une vision globale des impacts d’un produits sur son environnement et plus particulièrement sur le changement climatique, reflet de l’incidence de l’homme sur son environnement.
+- **Les particules fines** car ces dernières participent au réchauffement de la planète en piégeant les rayons du soleil, mais elles ont aussi de fortes conséquences sur la santé humaine. 
+- **L’épuisement des ressources en eau** qui est calculé en fonction de la consommation d’eau nécessaire au produit par rapport à sa rareté dans la région de production. L’épuisement des ressources en eau est responsable du stress hydrique pour les écosystèmes et peut modifier le cycle de l’eau de certaines régions. 
+- **L’épuisement des ressources énergétiques** qui correspond à l’utilisation de ressources non renouvelables, grandement responsables des émissions de gaz à effets de serre.  
+- **L’usage des terres** : Les terres utilisées pour l’agricultures ne sont plus à leur état naturel et représente des ressources en moins pour les milieux naturels (exemple : forêt).
+- **L’épuisement des ressources en minéraux** : Les ressources minérales sont non renouvelables. De plus leur extraction nécessite beaucoup d’énergies et libèrent de grandes quantités de gaz à effets de serre dans l’atmosphère. Par ailleurs leur extraction dégrade également l’environnement par la création de mines et carrières pour les extraire.
+- **L’appauvrissement de la couche d’ozone** induit une augmentation de l’exposition des individus aux rayonnements ultraviolets issus du soleil. Ces radiations sont nocives pour la santé et peuvent causer des cancers.
+- **L’acidification** peut avoir lieu par exemple dans les océans lorsque du CO2 est dissout dans l’eau, d’autres écosystèmes peuvent également être acidifiés à cause des pluies acides.
+- **L’effet des radiations ionisantes sur la santé** est issu de la rpudction d’électricité par la voie du nucléaire. Cette dernière est responsable de la production de déchets radioactifs néfaste pour les écosystèmes et la santé humaine. 
+- **La formation photochimique d’ozone** qui a des conséquences sur la santé, est issus de la réaction entre des oxydes d’azote et des composés volatils lorsque ces derniers sont exposés à la lumière du soleil.
+- **L’eutrophisation terrestre** déséquilibre voire appauvrit les sols (principalement agricoles) lorsqu’un excès de nutriments est apporté.
+- **L’eutrophisation marine** : ce phénomène dû à un excès de nutriments (principalement de l’azote) dans le sol ce qui engendre une prolifération d’algues, asphyxiant le milieu naturel. 
+- **L’eutrophisation d’eau douce**  tout comme pour l’eutrophisation marine, cette dernière mène à une asphyxie des milieux naturels par la prolifération d’algues. 
+- **L’écotoxicité d’eau douce** cet indicateur n’est pas très bien assimilé, mais il correspond à la contamination de l’environnement.
+- **Effet toxicologique sur la santé humaine (substances cancérogènes et non cancérogènes) :**ces deux indicateurs mesurent l’exposition des populations à des contaminants tels que des métaux lourds ou des pesticides.  
  
 
 Ces 16 indicateurs influencent le dérèglement climatique/ changement climatique auquel nous faisons face aujourd’hui.  

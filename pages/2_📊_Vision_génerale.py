@@ -52,19 +52,19 @@ st.write("Cette figure nous donne un premier un aperçu sur la répartition de l
 st.write("On peut analyser en détail les statistiques via ce tableau.")
 st.dataframe(data.describe()['DQR'])
 st.caption("On retrouve une moyenne ainsi qu'une médiane d'une valeure approximative de 2,7. De plus, on peut observer un maximum de 4,87 et un minimum de 1,2 ce qui signifie une grande hétérogénéité entre la qualité des produits de la base de données. ")
-
-fig = px.box(data, x="DQR", title="Box Plot de DQR")
-st.plotly_chart(fig)
-st.write("Ce box plot montre la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles.")
-
-st.write("Il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables, selon la Commission Européenne.")
 st.divider()
 
+fig = px.box(data, x="DQR", title="Boîte à moustache de DQR")
+st.plotly_chart(fig)
+st.write("Ce box plot montre une fois de plus la distribution des valeurs de la colonne DQR. Les lignes horizontales indiquent les quartiles.")
+
+st.divider()
+st.write("Selon nos recherches et la commission Européenne, il est conseillé de prendre les valeurs avec un DQR inférieur à 3 afin d'utiliser les valeurs les plus fiables.")
 st.write("Vous pouvez choisir la valeur de la qualité via le sélecteur ci-dessous.")
 dqr_value = st.select_slider('Qualité de la donnée',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
-
+st.caption("On remarque qu'en choisissant un DQR d'une valeur maximum de 3 on ne travaile plus que sur 1744 produits tandis que la base de données est composée de 2518 produits.")
 
 df = data[data["DQR"]<dqr_value]
 st.dataframe(df)
@@ -90,6 +90,7 @@ variables = ['Changement climatique',
 
 
 st.header('Les variables')
+st.write("Nous vous proposons désormais d'étudier les variables qui vous intéressent selon la qualité des données que vous avez pu sélectionner.")
 variable_select = st.selectbox('Choisisez une variable', (i for i in variables))
 
 confirm = st.checkbox('Afficher détails')
@@ -107,7 +108,7 @@ if confirm:
     min_variable.metric("Min", np.round(df[variable_select].min(), 3))
     max_variable.metric("Max", np.round(df[variable_select].max(), 3))
     mean_variable.metric("Moyenne", np.round(df[variable_select].mean(), 3))
-
+st.divider()
 st.write("Nous vous laissons poursuivre avec la page 3 sur le Score Unique EF de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")
 st.page_link("pages/3_📈_Score_unique_EF.py", label="Score Unique EF 📈", icon="3️⃣")

@@ -93,6 +93,7 @@ Cette analyse du cycle de vie a pour but d’identifier les principaux impacts s
 L’ACV est dite multicritères et multi-étapes. En effet, plusieurs critères environnementaux sont considérés tandis que toutes les phases du cycle de vie d’un produit sont prises en compte. Des bilans matières, d’énergie et d’émissions de polluants sont réalisés à chaque étape du cycle de vie du produit.
 """
 st.markdown(texte)
+st.image('ACV.png')
 st.divider()
 st.write("Nous vous laissons poursuivre avec la page 2 sur la vision générale de la base de donnée ou revenir à la page d'accueil avec les liens ci-dessous.")
 st.page_link("Homepage.py", label="Page d'accueil", icon="🏠")

@@ -111,7 +111,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 st.divider()
-st.write("Enfin, nous vous proposons de faire vos propres choix à travers les différents couples pour les comparer entre eux.")
+st.write("Voici la figure présentant tous les produits de tous les couples selon les 5 variables préconisées.")
 
 
 fig = go.Figure()
@@ -203,6 +203,8 @@ fig.add_trace(go.Scatterpolar(
 
 
 st.plotly_chart(fig)
+
+st.write("Enfin, nous vous proposons de faire vos propres choix à travers les différents couples pour les comparer entre eux.")
 
 fig = go.Figure()
 

@@ -13,7 +13,6 @@ import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 
 st.set_page_config(page_title="Conclusion", initial_sidebar_state='auto', layout="wide")
-st.set_page_config(page_title="Score unique EF", initial_sidebar_state='auto', layout="wide")
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
 cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})

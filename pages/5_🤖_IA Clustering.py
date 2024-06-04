@@ -12,7 +12,7 @@ from sklearn import preprocessing
 import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 
-st.set_page_config(page_title="Clustering", initial_sidebar_state='auto', layout="wide")
+st.set_page_config(page_title="IA Clustering", initial_sidebar_state='auto', layout="wide")
 st.title("IA Clustering")
 st.write("L'utilisation d'une IA va permettre de définir 3 groupes d'aliments qui possèdent des caractéristiques similaires.")
 data = pd.read_csv('Agribalyse_Synthese (2).csv')

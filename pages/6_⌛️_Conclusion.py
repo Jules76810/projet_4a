@@ -29,7 +29,7 @@ st.write ("Nous avons travaillé sur la version 3.1.1 de la base de données Agr
 st.write("Si vous souhaitez faire des retours sur la base de données Agribalyse pour des améliorations quelconques : nous vous invitons à cliquer sur le lien de la page officielle de la documentation de la base de données ci-dessous.")
 st.page_link("https://doc.agribalyse.fr/documentation/nous-contactez/contribuer-aux-travaux-agribalyse-r", label="Page de contact", icon="📇")
 st.divider()
-st.write("Nous tenions également à remercier chaleureusement Monsieur HAMILTON Araujo notre tuteur qui nous a accompagné tout le long de ce projet et grâce à qui ce site a pu voir le jour.")
+st.write("Nous tenions également à remercier chaleureusement Monsieur Hamilton Araujo notre tuteur qui nous a accompagné tout le long de ce projet et grâce à qui ce site a pu voir le jour.")
 st.write("""Si vous avez quelconques questions sur le projet n’hésitez pas à nous contacter via l'intermédiaire d'un de ces mails :
 margaux.boyer@etu.unilasalle.fr
 marion.decacqueray@etu.unilasalle.fr

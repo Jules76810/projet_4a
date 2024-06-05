@@ -19,7 +19,7 @@ data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "eff
 st.title('Projet 4A - Traitement de données alimentaires')
 st.header("Conclusion")
 
-st.write("""En conclusion, la base données agribalyse est une base de données complète qui peut servir d’outils dans différents secteurs comme : l’agriculture, les consommateurs, le secteur de la restauration ou encore pour la recherche et l’enseignement par exemple. Durant ce projet, l’impact environnementale de certains produits a été mis en lumière. Dans la plupart des cas, des différences majeures ont pu être observées entre les couples choisis, notamment ceux contenant de la viande ou demandant un processus de production ou de transport énergétiquement coûteux.  
+st.write("""En conclusion, la base données agribalyse est une base de données complète qui peut servir d’outils dans différents secteurs comme : l’agriculture, les consommateurs, le secteur de la restauration ou encore pour la recherche et l’enseignement par exemple. Durant ce projet, l’impact environnemental de certains produits a été mis en lumière. Dans la plupart des cas, des différences majeures ont pu être observées entre les couples choisis, notamment ceux contenant de la viande ou demandant un processus de production ou de transport énergétiquement coûteux.  
 
 Le fait de se baser sur l’analyse du cycle de vie des produits, permet d’identifier les étapes plus gourmandes, en eau ou encore en énergie. L’identification de ces étapes est primordiale pour pouvoir ensuite diminuer ces utilisations de ressources et ainsi essayer de réduire les impacts environnementaux.  
 
